@@ -67,3 +67,64 @@ nav a:hover {
   color: #fff;
   box-shadow: 0px 0px 10px #4a75e0;
 }
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #4a75e0;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+}
+
+.content {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 20px;
+  color: red;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
