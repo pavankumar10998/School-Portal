@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spring Flowers School Portal - Exam Results</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="School Logo" />
+      <h1>Exam Results</h1>
+      <div id="student-name"></div>
+    </header>
+    <script src="script.js"></script>
+    <nav>
+      <ul>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="results.html">Exam Results</a></li>
+        <li><a href="activities.html">Extra Activities</a></li>
+        <li><a href="profile.html">Student Profile</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h2>Select a Subject</h2>
+      <select id="subject-select">
+        <option value="math">Math</option>
+        <option value="english">English</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="music">Music</option>
+        <option value="art">Art</option>
+        <option value="pe">PE</option>
+        <option value="science-lab">Science Lab</option>
+      </select>
+      <button onclick="showResults()">Show Results</button>
+      <div id="results"></div>
+    </div>
+  </body>
+</html>

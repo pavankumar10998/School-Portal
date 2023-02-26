@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spring Flowers School Portal - Extra Activities</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="School Logo" />
+      <h1>Extra Activities</h1>
+      <div id="student-name"></div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="results.html">Exam Results</a></li>
+        <li><a href="activities.html">Extra Activities</a></li>
+        <li><a href="profile.html">Student Profile</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <form action="submit_activity.php" method="post">
+        <label for="activity-date">Date:</label>
+        <input
+          type="date"
+          id="activity-date"
+          name="activity-date"
+          required
+        /><br />
+
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity" required /><br />
+
+        <label for="activity-time">Time:</label>
+        <input
+          type="time"
+          id="activity-time"
+          name="activity-time"
+          required
+        /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
