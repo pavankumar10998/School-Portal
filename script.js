@@ -1,14 +1,10 @@
-function validateLogin() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-  
-    if (username === "pavan" && password === "test123") {
-      window.location.href = "homepage.html";
-      alert("Login successful");
-    } else if (username === "" || password === "") {
-      alert("Please enter both username and password");
+
+function check(form) {
+    if (form.username.value == "pavan" && form.password.value == "test123") {
+      return true;
     } else {
-      alert("Invalid username or password");
+      alert("Incorrect Password or Username")
+      return false;
     }
   }
 
