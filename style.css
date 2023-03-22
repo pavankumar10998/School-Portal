@@ -121,7 +121,7 @@ h2 {
   color: red;
 }
 
-ul {
+/* ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ ul {
 
 li {
   margin: 10px 0;
-}
+} */
 
 form {
   display: flex;
@@ -184,4 +184,24 @@ button:hover {
   margin-top: 20px;
   font-size: 18px;
   text-align: left;
+}
+
+#personal-info-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#personal-info-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#personal-info-list li span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#personal-info-list li:last-child {
+  margin-bottom: 0;
 }

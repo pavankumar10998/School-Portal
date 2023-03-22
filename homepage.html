@@ -6,7 +6,9 @@
   </head>
   <body>
     <header>
-      <img src="logo.png" alt="School Logo" />
+      <a href="homepage.html">
+        <img src="logo.png" alt="School Logo" />
+      </a>
       <h1>Welcome to Spring Flowers School Portal</h1>
       <div id="student-name"></div>
     </header>
@@ -15,9 +17,24 @@
       <ul>
         <li><a href="timetable.html">Time Table</a></li>
         <li><a href="results.html">Exam Results</a></li>
-        <li><a href="#extra-activities">Extra Activities</a></li>
+        <li><a href="activities.html">Extra Activities</a></li>
         <li><a href="profile.html">Student Profile</a></li>
       </ul>
     </nav>
+    <div class="content">
+      <h2>Activities</h2>
+      <ul id="activity-list"></ul>
+    </div>
+    <script>
+      // Get activities from session storage
+      const activities = JSON.parse(sessionStorage.getItem("activities"));
+      // Display activities on the page
+      const activityList = document.getElementById("activity-list");
+      activities.forEach((activity) => {
+        const li = document.createElement("li");
+        li.textContent = `${activity.date} - ${activity.activity} at ${activity.time}`;
+        activityList.appendChild(li);
+      });
+    </script>
   </body>
 </html>

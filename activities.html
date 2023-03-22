@@ -6,7 +6,10 @@
   </head>
   <body>
     <header>
-      <img src="logo.png" alt="School Logo" />
+      <a href="homepage.html">
+        <img src="logo.png" alt="School Logo" />
+      </a>
+      <script src="script.js"></script>
       <h1>Extra Activities</h1>
       <div id="student-name"></div>
     </header>
@@ -19,7 +22,7 @@
       </ul>
     </nav>
     <div class="content">
-      <form action="submit_activity.php" method="post">
+      <form>
         <label for="activity-date">Date:</label>
         <input
           type="date"
@@ -39,7 +42,7 @@
           required
         /><br />
 
-        <input type="submit" value="Submit" />
+        <button type="submit" onclick="saveActivity()">Submit</button>
       </form>
     </div>
   </body>
